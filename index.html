@@ -35,38 +35,97 @@
     </section>
 
     <section class="card" id="css-section">
-      <section class="card" id="css-section">
-        <h2>CSS</h2>
-        <ul>
-          <li>CSS stands for Cascading Style Sheets.</li>
-          <li>A margin indicates how much space we want around the outside of an element.</li>
-          <li>A padding indicates how much space we want around the content inside an element.</li>
-        </ul>
-      </section>
+      <h2>CSS</h2>
+      <ul>
+        <li>CSS stands for Cascading Style Sheets.</li>
+        <li>CSS will almost always follow a basic pattern like... Selector {
 
-      <section class="card" id="git-section">
-        <h2>Git</h2>
-        <ul>
-          <li>git status: checks what branch we are currently on</li>
-          <li>git checkout -b branch-name: creates a new branch and switches to it</li>
-        </ul>
-      </section>
+          property : Value ;
 
-      <section class="card" id="javascript-section">
-        <h2>JavaScript</h2>
-        <ul>
-          <li>The const keyword allows us to create a variable that can't be reassigned a value.</li>
-          <li>JS files are linked to an HTML document by being linked at the line right before the body closing tag.
-          </li>
-          <li>The console.log method is used to output a message to the web console by adding an arument. IE
-            console.log(topics).</li>
-          <li>An array is a single variable that is used to hold a group of data, typically a the data is related in
-            some way.</li>
-          <li>The for loop consists of the keyword for, followed by a three-part conditional statement, and then a code
-            block that defines the code to execute at each iterative step.</li>
-          <li>The code x++ is a shortcut way of writing x+1.</li>
-        </ul>
-      </section>
+          }
+
+          for a real example... h1 {
+
+          color: purple ;
+
+          }</li>
+        <li>A margin indicates how much space we want around the outside of an element.</li>
+        <li>A padding indicates how much space we want around the content inside an element.</li>
+        <li>The best way to incorporate CSS into HTML is w an External Stylesheet, you code all the CSS in its own
+          document and then link it to your HTML. The link should be in the head of your HTML file after the last meta
+          tag.</li>
+        <li>RGB values on CSS range from 0 (off) to 255 (max). For example rgb (255,0,0) is max red while rgb (0,0,0)
+          is black.</li>
+        <li>Adjacent selector example. h1+p { color: red;} This selects only the paragraphs that are immediately
+          preceded by an h1.</li>
+        <li>Direct Child example div > li {color: white;} Selects only the li's that are direct children of a div
+          element.</li>
+        <li>Attribute selector example... input [type="text"] {width: 300 px; color: yellow;} selects all input
+          elements where the type attribute is set to "text".</li>
+        <li>Pseudo Classes are keywords which are added to a selector that specifies a special state of the selected
+          element(s). Examples are :active, :checked, :first, :first-child, :hover, :not(), :nth-child(),
+          :nth-of-type(). Thet always start w a colon.</li>
+        <li>Pseudo Elements are keywords added to a selector that lets you style a particular part of selected
+          element(s). For example, ::after, ::before, ::first-letter, ::first-line, ::selection. generally you should
+          use 2 colons but most browsers don't actually care, 1 can be used.</li>
+        <li>The Cascade in CSS refers to the fact that the order your styles are declared in and linked to matters!
+          For example h1 {color: red;} h1 {color: purple;} PURPLE WINS!</li>
+        <li>Specificity is how the browser decides which rules to apply when multiple rules could apply to the same
+          element. The more specific selector wins! The general formula to specificity goes as follows. ID> CLASS>
+          ELEMENT</li>
+        <li>Border Properties: The most important ones are Border-Width, controls the thickness of the border.
+          Border-Color, controls the color of the border. Boyder-Style, controls the line style - dashed, solid, etc.
+        </li>
+        <li>Border shorthand allows you to change the width, style, and color of a border all by typing border: width
+          that you want, style that you want, color that you want.</li>
+        <li>border-radius: Rounds the corners of an elements outer border edge.</li>
+        <li>The shorthand for padding is just padding: example. padding: 10px applies 10px of padding to all four
+          sides!</li>
+        <li>EM's are relative units. With font-size, 1em equals the font-size of the parent. 2em's is twice the
+          font-size of the parent, etc. With other properties, 1em is equal to the computed font-size of the element
+          itself.</li>
+        <li>REM's pr ROOT EM's are relative to the root html elements font-size. Often easier to work with. If the
+          root font-size is 20px, 1 rem is always 20px, 2rem is always 40 px,etc.</li>
+        <li>The a in rgba handles the opacity of whatever you are applying rgb on. It ranges from 0-1 with 0 being
+          completely transparent & 1 not being transparent at all.</li>
+      </ul>
+    </section>
+
+    <section class="card" id="git-section">
+      <h2>Git</h2>
+      <ul>
+        <li>GitHub is a distributed version control software. Version control is a way to save changes over time
+          without overwriting previous versions</li>
+        <li>git status: checks what branch we are currently on</li>
+        <li>git checkout -b branch-name: creates a new branch and switches to it</li>
+        <li>git clone [url]: Download a repository that already exists on GitHub, inluding all of the files, branches,
+          and commits.</li>
+        <li>git branch: This shows the existing branches in your local repository.</li>
+        <li>git commit -m "descriptive message": Records file snapshots permanently in the version history.</li>
+        <li>git pull: Updates your current local working branch with all new commits from the corresponding remote
+          branch on GitHub.</li>
+        <li>git push: Uploads all local branch commits to the remote.</li>
+        <li>git log: Browse and inspect the evolution of the projects files.</li>
+      </ul>
+    </section>
+
+    <section class="card" id="javascript-section">
+      <h2>JavaScript</h2>
+      <ul>
+        <li>The const keyword allows us to create a variable that can't be reassigned a value.</li>
+        <li>Control flow is the order in whic ha computer executes code in a script.</li>
+        <li>JS files are linked to an HTML document by being linked at the line right before the body closing tag.
+        </li>
+        <li>The console.log method is used to output a message to the web console by adding an arument. IE
+          console.log(topics).</li>
+        <li>An array is a single variable that is used to hold a group of data, typically a the data is related in
+          some way.</li>
+        <li>The for loop consists of the keyword for, followed by a three-part conditional statement, and then a code
+          block that defines the code to execute at each iterative step.</li>
+        <li>The code x++ is a shortcut way of writing x+1.</li>
+        <li>Functions are reusable blocks of code that contain instructions to perfrom a task.</li>
+      </ul>
+    </section>
   </main>
 
   <footer>
